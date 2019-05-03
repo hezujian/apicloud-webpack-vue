@@ -1,0 +1,18 @@
+{
+    "plugins": [
+      "@babel/plugin-transform-runtime",
+      ["import", {
+        "libraryName": "muse-ui",
+        "libraryDirectory": "lib",
+        "camel2DashComponentName": false
+      }]
+     ],
+     "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": "> 0.25%, not dead"
+        }
+      ]
+     ]
+  }

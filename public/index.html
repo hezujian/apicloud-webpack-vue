@@ -1,0 +1,25 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalabel=0,width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+  
+  <link rel="stylesheet" href="<%= htmlWebpackPlugin.options.projectPath %>/assets/css/muse-icon.css">
+  <script type="text/javascript">
+    window.__HEADER_H = 0;
+  </script>
+</head>
+<body>
+<div id="app"></div>
+</body>
+<script type="text/javascript"  src="<%= htmlWebpackPlugin.options.projectPath %>/assets/js/api.js"></script>
+<script type="text/javascript"  src="<%= htmlWebpackPlugin.options.projectPath %>/lib/vue.dll.js"></script>
+<script type="text/javascript"  src="<%= htmlWebpackPlugin.options.jsPath %>"></script>
+<script type="text/javascript">
+	apiready = function() {
+		if(window.__APIREADY){
+			window.__APIREADY()
+		}
+	};
+</script>
+</html>
